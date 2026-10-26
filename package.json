@@ -1,0 +1,26 @@
+{
+  "name": "zhixu",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/serve.mjs",
+    "test": "node --test tests/*.test.cjs",
+    "audit:privacy": "node scripts/audit-public.mjs"
+  },
+  "dependencies": {
+    "jszip": "3.10.1",
+    "docx-preview": "0.4.1",
+    "pdfjs-dist": "6.4.299",
+    "tesseract.js": "6.0.1"
+  },
+  "devDependencies": {
+    "fake-indexeddb": "6.2.6",
+    "jsdom": "30.1.3"
+  }
+}
